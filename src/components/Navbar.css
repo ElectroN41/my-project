@@ -1,0 +1,213 @@
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c7dc3;
+    color: #fff;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-left .logo {
+    font-family: Nunito, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+}
+
+.navbar-center {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar-center ul {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-center ul li {
+    margin: 0 10px;
+}
+
+.navbar-center li a {
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right .cart-icon,
+.navbar-right .user-icon {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+    position: relative;
+    font-size: 1.2rem;
+}
+
+.navbar-right .cart-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar-right .cart-count {
+    background-color: #f44336;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.2rem 0.4rem;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -8px;
+    right: -8px;
+}
+
+/* Hide the hamburger menu by default on larger screens */
+.navbar-right .hamburger-menu {
+    display: none;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 0.5rem;
+    }
+
+    .navbar-left {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    /* Hide the center menu on small screens and show it as a dropdown */
+    .navbar-center ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    /* Show menu when .active class is added */
+    .navbar-center.active ul {
+        display: flex;
+    }
+
+    .navbar-center ul li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar-right {
+        justify-content: flex-end;
+        width: 100%;
+        padding-right: 1rem;
+    }
+
+    /* Show the hamburger menu only on screens below 768px */
+    .navbar-right .hamburger-menu {
+        display: block;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+}
+
+
+ /* original code
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1c7dc3;
+    color: #fff;
+    padding: 1rem;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.navbar-left .logo {
+    font-family: Nunito, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;   
+}
+
+.navbar-center{
+    margin: 0;
+    padding: 0;
+}
+.navbar-center ul   {
+    list-style-type: none;
+    margin-left: 43rem;
+    margin-top: -7px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #1c7dc3;
+}
+.navbar-center ul li {
+    float: right;
+}
+.navbar-center li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+
+.navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-right .cart-icon,
+.navbar-right .user-icon {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 1rem;
+    position: relative;
+}
+
+.navbar-right .cart-count {
+    background-color: #f44336;
+    color: #fff;
+    border-radius: 50%;
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    position: absolute;
+    top: -0.5rem;
+    right: -0.5rem;
+}
+
+@media (max-width: 768px) {
+    .navbar-center .nav-links {
+        display: none;
+    }
+
+    .navbar-right {
+        display: flex;
+        align-items: center;
+    }
+
+    .navbar-right .hamburger-menu {
+        display: block;
+        color: #fff;
+        font-size: 1.5rem;
+        cursor: pointer;
+    }
+} */
+
+
+
